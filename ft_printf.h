@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maralves <maralves@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 05:32:27 by vboxuser          #+#    #+#             */
-/*   Updated: 2025/08/23 05:36:20 by vboxuser         ###   ########.fr       */
+/*   Updated: 2025/08/26 13:58:00 by maralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-#define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+#define FT_PRINTF_H
 
 #include <stdarg.h>
+#include "libft/libft.h"
 
 #endif
 
