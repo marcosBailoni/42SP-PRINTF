@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: maralves <maralves@student.42.fr>          +#+  +:+       +#+         #
+#    By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/25 15:28:39 by maralves          #+#    #+#              #
-#    Updated: 2025/08/07 10:59:04 by maralves         ###   ########.fr        #
+#    Updated: 2025/09/05 20:00:29 by vboxuser         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,9 +43,14 @@ SRC = ft_memchr.c \
       ft_itoa.c \
       ft_split.c \
       ft_strnstr.c\
-	  ft_isascii.c\
-	  ft_strlen.c\
-      ft_putendl_fd.c
+	ft_isascii.c\
+	ft_strlen.c\
+      ft_putendl_fd.c\
+      ft_putnbr_hex.c\
+      ft_putchar.c\
+      ft_putstr.c\
+      ft_putnbr.c\
+      ft_putnbr_unsigned.c
 
 BONUS_SRC = ft_lstnew_bonus.c\
       ft_lstadd_front_bonus.c\

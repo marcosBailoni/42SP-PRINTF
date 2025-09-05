@@ -1,16 +1,23 @@
 NAME = libftprintf.a
 LIBFT_PATH = libft
+LIBFT_A = $(LIBFT_PATH)/libft.a
 SRCS = ft_printf.c
 OBJS = $(SRCS:.c=.o)
 CC = gcc
 FLAGS = -Wall -Werror -Wextra
 
+# Lista de todos os .o da libft (extraídos do .a)
+LIBFT_OBJS := $(patsubst $(LIBFT_PATH)/%, %, $(shell ar -t $(LIBFT_A)))
+
 all: $(NAME)
 
-$(NAME): $(OBJS) $(LIBFT_PATH)/libft.a
-	ar rcs $(NAME) $(OBJS) $(LIBFT_PATH)/libft.a
+$(NAME): $(OBJS) $(LIBFT_A)
+	cp $(LIBFT_A) temp_libft.a
+	ar x temp_libft.a
+	ar rcs $(NAME) $(OBJS) *.o
+	rm -f temp_libft.a *.o
 
-$(LIBFT_PATH)/libft.a:
+$(LIBFT_A):
 	make -C $(LIBFT_PATH)
 
 %.o: %.c

@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/23 05:32:27 by vboxuser          #+#    #+#             */
-/*   Updated: 2025/08/28 03:11:56 by vboxuser         ###   ########.fr       */
+/*   Created: 2025/09/03 14:30:12 by vboxuser          #+#    #+#             */
+/*   Updated: 2025/09/03 17:08:30 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+#include "libft.h"
 
-#include <stdarg.h>
-#include "libft/libft.h"
+int	ft_putstr(char *s)
+{
+	int	count;
 
-int	ft_printf(const char *str, ...);
-
-#endif
+	count = 0;
+	if (!s)
+		return (ft_putstr("(null)"));
+	while (s[count])
+	{
+		ft_putchar(s[count]);
+		count++;
+	}
+	return (count);
+}
