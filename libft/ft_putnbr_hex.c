@@ -6,13 +6,13 @@
 /*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 14:33:02 by vboxuser          #+#    #+#             */
-/*   Updated: 2025/09/05 20:29:08 by vboxuser         ###   ########.fr       */
+/*   Updated: 2025/09/06 03:32:13 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_hex(unsigned long nbr, char letter_case)
+int	ft_putnbr_hex(unsigned long long nbr, char letter_case)
 {
 	char	*hex;
 	int		count;

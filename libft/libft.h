@@ -6,7 +6,7 @@
 /*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 18:43:46 by maralves          #+#    #+#             */
-/*   Updated: 2025/09/05 20:29:13 by vboxuser         ###   ########.fr       */
+/*   Updated: 2025/09/06 03:32:04 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-int		ft_putnbr_hex(unsigned long nbr, char letter_case);
+int		ft_putnbr_hex(unsigned long long nbr, char letter_case);
 
 #endif
