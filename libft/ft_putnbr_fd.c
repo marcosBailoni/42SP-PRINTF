@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maralves <maralves@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 17:17:23 by maralves          #+#    #+#             */
-/*   Updated: 2025/08/06 18:17:25 by maralves         ###   ########.fr       */
+/*   Updated: 2025/09/09 16:27:55 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		write (fd, "-2147483648", 11);
 		return ;
-	}	
+	}
 	if (n < 0)
 	{
 		write (fd, "-", 1);

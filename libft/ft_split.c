@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maralves <maralves@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 14:40:15 by maralves          #+#    #+#             */
-/*   Updated: 2025/08/04 16:44:17 by maralves         ###   ########.fr       */
+/*   Updated: 2025/09/09 16:28:08 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ int	ft_alloc_strs(const char *s, char c, char **v_str, size_t total_words)
 		{
 			ft_free_all_malloc(v_str, index_vect);
 			return (0);
-		}			
+		}
 		ft_strlcpy(v_str[index_vect], s, word_len + 1);
 		s += word_len;
 		index_vect++;

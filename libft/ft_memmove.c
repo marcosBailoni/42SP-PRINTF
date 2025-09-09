@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maralves <maralves@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vboxuser <vboxuser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 19:28:38 by maralves          #+#    #+#             */
-/*   Updated: 2025/08/04 16:45:18 by maralves         ###   ########.fr       */
+/*   Updated: 2025/09/09 16:28:23 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	count = 0;
 	while (count < n)
-	{		
+	{
 		*temp_dest = *temp_src;
 		temp_dest += index_direction;
 		temp_src += index_direction;
