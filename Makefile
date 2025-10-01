@@ -1,4 +1,3 @@
-# Makefile (opção B - criar lib combinada sem extrair)
 NAME = libftprintf.a
 LIBFT_PATH = libft
 LIBFT_A = $(LIBFT_PATH)/libft.a
