@@ -1,27 +1,25 @@
+# Makefile (opção B - criar lib combinada sem extrair)
 NAME = libftprintf.a
 LIBFT_PATH = libft
 LIBFT_A = $(LIBFT_PATH)/libft.a
 SRCS = ft_printf.c
 OBJS = $(SRCS:.c=.o)
 CC = gcc
-FLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Wextra -Werror
 
-# Lista de todos os .o da libft (extraídos do .a)
-LIBFT_OBJS := $(patsubst $(LIBFT_PATH)/%, %, $(shell ar -t $(LIBFT_A)))
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT_A)
-	cp $(LIBFT_A) temp_libft.a
-	ar x temp_libft.a
-	ar rcs $(NAME) $(OBJS) *.o
-	rm -f temp_libft.a *.o
+	cp $(LIBFT_A) $(NAME)
+	ar rcs $(NAME) $(OBJS)
 
 $(LIBFT_A):
 	make -C $(LIBFT_PATH)
 
 %.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
